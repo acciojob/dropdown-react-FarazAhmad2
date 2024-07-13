@@ -292,14 +292,14 @@ function App() {
         </div>
 
         <div className="card">
-          <div id="city-name">{states[index.state].city[index.city].name}</div>
+          <div id="city-title">{states[index.state].city[index.city].name}</div>
           <div id="city-description">
             {states[index.state].city[index.city].description}
           </div>
         </div>
 
         <div className="card">
-          <div id="landmark-name">
+          <div id="landmark-title">
             {
               states[index.state].city[index.city].landmarks[index.landmark]
                 .name
