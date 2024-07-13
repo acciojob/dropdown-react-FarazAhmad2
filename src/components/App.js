@@ -286,19 +286,19 @@ function App() {
       </select>
       <div className="cards">
         <div id="state-title" className="card">
-          {states[index.state].name}
+          {/* {states[index.state].name} */}
           <div id="state-description">{states[index.state].description}</div>
         </div>
 
         <div id="city-name" className="card">
-          {states[index.state].city[index.city].name}
+          {/* {states[index.state].city[index.city].name} */}
           <div id="city-description">
             {states[index.state].city[index.city].description}
           </div>
         </div>
 
         <div id="landmark-name" className="card">
-          {states[index.state].city[index.city].landmarks[index.landmark].name}
+          {/* {states[index.state].city[index.city].landmarks[index.landmark].name} */}
           <div id="landmark-description">
             {states[index.state].city[index.city].landmarks[index.landmark].description}
           </div>
