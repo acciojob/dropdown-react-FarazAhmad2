@@ -219,7 +219,6 @@ const states = [
   },
 ];
 
-
 const ACTIONS = {
   STATE_IDX: "state-index",
   CITY_IDX: "city-index",
@@ -278,31 +277,39 @@ function App() {
         ))}
       </select>
       <select id="landmark" onChange={getLandmarkIndex}>
-        {states[index.state].city[index.city].landmarks.map((landmark, index) => (
-          <option key={index} value={index}>
-            {landmark.name}
-          </option>
-        ))}
+        {states[index.state].city[index.city].landmarks.map(
+          (landmark, index) => (
+            <option key={index} value={index}>
+              {landmark.name}
+            </option>
+          )
+        )}
       </select>
       <div className="cards">
-        <div id="state-title" className="card">
-          {states[index.state].name}
-          <div id="state-description">
-            {/* {states[index.state].description} */}
-            </div>
+        <div className="card">
+          <div id="state-title">{states[index.state].name}</div>
+          <div id="state-description">{states[index.state].description}</div>
         </div>
 
-        <div id="city-name" className="card">
-          {states[index.state].city[index.city].name}
+        <div className="card">
+          <div id="city-name">{states[index.state].city[index.city].name}</div>
           <div id="city-description">
-            {/* {states[index.state].city[index.city].description} */}
+            {states[index.state].city[index.city].description}
           </div>
         </div>
 
-        <div id="landmark-name" className="card">
-          {states[index.state].city[index.city].landmarks[index.landmark].name}
+        <div className="card">
+          <div id="landmark-name">
+            {
+              states[index.state].city[index.city].landmarks[index.landmark]
+                .name
+            }
+          </div>
           <div id="landmark-description">
-            {/* {states[index.state].city[index.city].landmarks[index.landmark].description} */}
+            {
+              states[index.state].city[index.city].landmarks[index.landmark]
+                .description
+            }
           </div>
         </div>
       </div>
