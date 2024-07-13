@@ -205,7 +205,7 @@ const states = [
             {
               name: "Singhwara",
               description:
-                "Famous for mango orchards and being the birthplace of poets.",
+                "Famous for its Groundnut Market",
             },
             {
               name: "Jale",
