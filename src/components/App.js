@@ -287,7 +287,9 @@ function App() {
       <div className="cards">
         <div id="state-title" className="card">
           {states[index.state].name}
-          {/* <div id="state-description">{states[index.state].description}</div> */}
+          <div id="state-description">
+            {/* {states[index.state].description} */}
+            </div>
         </div>
 
         <div id="city-name" className="card">
