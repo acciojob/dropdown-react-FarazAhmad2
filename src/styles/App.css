@@ -7,7 +7,7 @@ select {
     gap: 1rem;
 }
 
-#state-name, #city-name, #landmark-name {
+.card {
     border: 2px solid black;
     border-radius: 0.5rem;
     width: 20rem;
