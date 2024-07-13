@@ -210,7 +210,7 @@ const states = [
             {
               name: "Jale",
               description:
-                "Jale also spelled Jalley, is a town in Darbhanga district of Mithila region of Bihar state, India.",
+                "Famous for its roasted seads market.",
             },
           ],
         },
