@@ -1,16 +1,22 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+select {
+    margin: 1rem;
 }
 
-.bg-pink{
-	background-color:pink;
+.cards {
+    display: flex;
+    gap: 1rem;
+}
+
+#state-name, #city-name, #landmark-name {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    width: 20rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#state-description, #city-description, #landmark-description {
+    font-weight: 400;
+    margin: 0.5rem auto;
 }
